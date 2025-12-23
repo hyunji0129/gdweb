@@ -22,6 +22,7 @@
             </a>
         </div>
     </div>
+
     <section class="top">
         <header>
             <div class="header_content">
@@ -85,11 +86,6 @@
             </div>
         </header>
     </section>
-
-    <script>
-        const headerContent = document.querySelector(".header_content");
-        
-    </script>
 
     <main>
         <section class="content">
@@ -276,5 +272,20 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const headerContent = document.querySelector(".header_content");
+        window.addEventListener("scroll",()=>{
+            let scrollHeight = window.scrollY;
+            if(headerContent > 0) {
+                headerContent.classList.add(".header_content_active");
+            }else {
+                headerContent.classList.remove(".header_content_active");
+            }
+            
+        });
+        
+    </script>
+
 </body>
 </html>

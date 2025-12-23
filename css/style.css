@@ -60,6 +60,13 @@ header {
     position: fixed;
     width: 100%;
     z-index: 3;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.header_content_active {
+    opacity: 0;
+    overflow: hidden;
 }
 
 .content {
