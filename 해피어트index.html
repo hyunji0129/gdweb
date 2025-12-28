@@ -24,7 +24,7 @@
     </div>
 
     <section class="top">
-        <header>
+        <header class="header">
             <div class="header_content">
                 <div class="header_top">
                     <ul>
@@ -274,17 +274,15 @@
     </footer>
 
     <script>
-        const headerContent = document.querySelector(".header_content");
         window.addEventListener("scroll",()=>{
-            let scrollHeight = window.scrollY;
-            if(headerContent > 0) {
-                headerContent.classList.add(".header_content_active");
+            const header = document.querySelector(".header_content");
+            const scrollPos = window.pageYOffset;
+            if(scrollPos > 100){
+                header.style.opacity = 0;
             }else {
-                headerContent.classList.remove(".header_content_active");
+                header.style.opacity = 1;
             }
-            
         });
-        
     </script>
 
 </body>

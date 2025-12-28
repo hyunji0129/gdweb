@@ -7,6 +7,17 @@ body {
     height: 5000px;
 }
 
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(186, 49, 49) ;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
 .btn1 {
     width: 50px;
     height: 50px;
@@ -43,6 +54,11 @@ body {
     font-size: 15px;
 }
 
+.header {
+    position: relative;
+    margin-top: -20px;
+}
+
 header {
     background: url(../이미지/상단이미지.png);
     height: 80vh;
@@ -60,13 +76,6 @@ header {
     position: fixed;
     width: 100%;
     z-index: 3;
-    opacity: 1;
-    transition: 0.3s;
-}
-
-.header_content_active {
-    opacity: 0;
-    overflow: hidden;
 }
 
 .content {
@@ -81,14 +90,12 @@ header {
     height: 40px;
     text-align: center;
     line-height: 40px;
-    position: sticky;
-    top: 0px;
 }
 
 .header_left > nav > ul,
 .header_right {
     display: flex;
-    padding: 10px 40px;
+    padding: 20px 40px;
 
 }
 
@@ -100,7 +107,6 @@ header {
 
 .header_center > h1 > img {
     height: 40px;
-    margin: 20px 0;
     transform: translateX(-130px);
 }
 
@@ -128,7 +134,7 @@ header {
 .main_text {
     color: #fff;
     margin: 20px 50px;
-    transform: translateY(250px);
+    transform: translateY(200px);
 
 }
 
@@ -137,9 +143,8 @@ header {
 }
 
 .subject {
-    font-size: 50px;
-    font-weight: 500;
-    line-height: 70px;
+    font-size: 45px;
+    font-weight: 600;
 }
 
 .content {
